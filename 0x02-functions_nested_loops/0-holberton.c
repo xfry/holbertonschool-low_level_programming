@@ -5,9 +5,13 @@
  *
  * Return: Always 0 (Success)
  */
+void print_message(char *text)
+{
+	write(1, text, sizeof(text)+2);
+}
+
 int main (void)
 {
-	char *text = "Holberton\n";
-	write(1, text, sizeof(text)+1);
+	print_message("Holberton\n");
 	return (0);
 }
