@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "holberton.h"
+#include "unistd.h"
 /**
  * main - Entry point
  *
@@ -6,6 +7,7 @@
  */
 int main (void)
 {
-	printf("Holberton\n");
+	char *text = "Holberton\n";
+	write(1, text, sizeof(text)+1);
 	return (0);
 }
