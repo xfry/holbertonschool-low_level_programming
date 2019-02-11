@@ -7,10 +7,10 @@
  */
 void print_message(char *text)
 {
-	write(1, text, sizeof(text)+2);
+	write(1, text, sizeof(text) + 2);
 }
 
-int main (void)
+int main(void)
 {
 	print_message("Holberton\n");
 	return (0);
