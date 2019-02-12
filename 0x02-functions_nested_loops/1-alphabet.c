@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * generate_alphabet - a loop to generate a-z text
+ * print_alphabet - a loop to generate a-z text
  *
  * description: this function generate the alphabet
  * Return: void
