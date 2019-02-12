@@ -1,8 +1,10 @@
 #include "holberton.h"
 /**
- * print_sign a function that prints sign of a integer
+ * print_sign - a function that prints sign of a integer
  * @n: a integer number
  *
+ * description: a function that prints a positive or
+ * negative sign if the value is less, equal or grather than 0
  * Return: integer value
  */
 int print_sign(int n)
