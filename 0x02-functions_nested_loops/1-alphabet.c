@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "_putchar.c"
 /**
  * generate_alphabet - a loop to generate a-z text
  *
@@ -13,6 +12,7 @@ void print_alphabet(void)
 	for (letter = 'a'; letter <= 'z'; letter++)
 		_putchar (letter);
 
+	_putchar ('\n');
 }
 /**
  *main - Entry point
