@@ -6,7 +6,7 @@
  * description: this function generate the alphabet
  * Return: void
  */
-void generate_alphabet(void)
+void print_alphabet(void)
 {
 	char letter;
 
@@ -22,6 +22,6 @@ void generate_alphabet(void)
  */
 int main(void)
 {
-	generate_alphabet();
+	print_alphabet();
 	return (0);
 }
