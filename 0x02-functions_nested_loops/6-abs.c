@@ -10,6 +10,6 @@ int _abs(int n)
 {
 	int aux;
 
-	aux = n < 0 ? ((-1)*(n)) : n;
+	aux = n < 0 ? ((-1) * (n)) : n;
 	return (aux);
 }
