@@ -11,7 +11,7 @@ void fibonacci(void)
 {
 	int i = 1;
 
-	long int n1, n2, aux;
+	long int n1=0, n2=1, aux;
 
 	while (i <= 50)
 	{
