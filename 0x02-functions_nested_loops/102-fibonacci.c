@@ -12,7 +12,7 @@ void fibonacci(void)
 	int i = 1;
 	long int n1 = 0, n2 = 1, aux = 0;
 
-	while (i < 50)
+	while (i <= 50)
 	{
 		aux = n1 + n2;
 		printf("%li, ", aux);
