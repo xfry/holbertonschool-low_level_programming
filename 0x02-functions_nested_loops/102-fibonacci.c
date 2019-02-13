@@ -10,13 +10,15 @@
 void fibonacci(void)
 {
 	int i = 1;
+
 	long int n1 = 0, n2 = 1, aux = 0;
 
 	while (i <= 50)
 	{
 		aux = n1 + n2;
 		printf("%li", aux);
-		if(i < 50) {
+		if (i < 50)
+		{
 			printf(", ");
 		}
 		n1 = n2;
@@ -33,5 +35,5 @@ void fibonacci(void)
 int main(void)
 {
 	fibonacci();
-	return 0;
+	return (0);
 }
