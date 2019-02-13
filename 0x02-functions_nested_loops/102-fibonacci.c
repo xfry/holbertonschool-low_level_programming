@@ -2,6 +2,7 @@
 #include "stdio.h"
 /**
  * fibonacci - function to calc fibonacci
+ *
  * description: shows the first 50 numbers of fibonacci
  * succession
  * Return: void
@@ -19,4 +20,15 @@ void fibonacci(void)
 		n2 = aux;
 		i++;
 	}
+}
+/**
+ * main - Entry point.
+ *
+ * description: the main function to run program.
+ * Return: Always 0
+ */
+int main(void)
+{
+	fibonacci();
+	return 0;
 }
