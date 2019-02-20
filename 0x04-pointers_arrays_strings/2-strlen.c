@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "_putchar.c"
 /**
  * _strlen - A function that return string length
  * @s: a char pointer
