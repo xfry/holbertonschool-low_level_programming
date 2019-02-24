@@ -2,20 +2,20 @@
 
 void rev_string(char *s)
 {
-	int length = 0;
+	int length = 0, total_length = 0;
 	int new_length = 0;
-	char *s2 = s;
+	char temp;
 
 	while(s[length] != '\0')
-	{
-		s2[length] = s[length];
 		length++;
-	}
 	length -= 1;
-	while(length > -1)
+	total_length = length;
+	while(length > total_length*0.5)
 	{
-		s[new_length] = s2[length];
-		new_length++;
+		temp = s[new_length];
+		s[new_length] = s[length];
+		s[length] = temp;
 		length--;
+		new_length++;
 	}
 }
