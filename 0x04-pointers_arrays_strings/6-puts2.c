@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "_putchar.c"
 /**
  * puts2 - a function to prints odd characters
  * @str: a char pointer param
