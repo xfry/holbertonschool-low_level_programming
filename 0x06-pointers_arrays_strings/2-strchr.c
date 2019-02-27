@@ -15,7 +15,7 @@ char *_strchr(char *s, char c)
 	char arr[] = {'0'};
 	char *p = arr;
 
-	while (s[length] != '\0')
+	while (s[length])
 	{
 		if (s[length] == c)
 		{
