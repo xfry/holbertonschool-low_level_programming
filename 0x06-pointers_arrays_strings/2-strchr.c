@@ -21,7 +21,7 @@ char *_strchr(char *s, char c)
 	{
 		if(s[length] == c)
 		{
-			arr[length] = c;
+			arr[0] = c;
 			return (p);
 		}
 		length++;
