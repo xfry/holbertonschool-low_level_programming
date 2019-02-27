@@ -14,15 +14,12 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int length = 0;
-	char arr[] = {'0'};
-	char *p = arr;
 
 	while (s[length])
 	{
-		if (s[length] == c || c == '\0')
+		if (s[length] == c)
 		{
-			arr[0] = c;
-			return (p);
+			return (&s[length]);
 		}
 		length++;
 	}
