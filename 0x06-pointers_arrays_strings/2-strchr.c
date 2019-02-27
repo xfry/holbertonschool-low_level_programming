@@ -20,8 +20,12 @@ char *_strchr(char *s, char c)
 	while(s[length])
 	{
 		if(s[length] == c)
+		{
 			arr[length] = c;
-		return (p);
+			return (p);
+		}
+		length++;
 	}
-	return "";
+
+	return (0);
 }
