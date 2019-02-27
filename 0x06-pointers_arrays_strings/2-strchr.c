@@ -12,13 +12,15 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int length = 0;
+	char arr[] = {'0'};
+        char *p = arr;
 
 	while (s[length])
 	{
 		if (s[length] == c)
 		{
-			s[length] = c;
-			return (s);
+			arr[length] = c;
+			return (p);
 		}
 		length++;
 	}
