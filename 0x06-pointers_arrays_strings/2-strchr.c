@@ -14,6 +14,8 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int length = 0;
+	char arr[] = {'0'};
+	char *p = arr;
 
 	while (s[length])
 	{
@@ -21,9 +23,12 @@ char *_strchr(char *s, char c)
 		{
 			return (&s[length]);
 		}
+		else if(c=='\0') {
+			arr[0] = c;
+			return (p);
+		}
 		length++;
 	}
-	if(c== '\0')
-		return 0;
+
 	return (0);
 }
