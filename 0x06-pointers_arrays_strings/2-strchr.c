@@ -19,7 +19,7 @@ char *_strchr(char *s, char c)
 
 	while(s[length])
 	{
-		if(s[length] == c)
+		if(s[length] == c || c == '\0')
 		{
 			arr[0] = c;
 			return (p);
