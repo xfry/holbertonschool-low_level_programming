@@ -24,8 +24,6 @@ char *_strchr(char *s, char c)
 			arr[0] = c;
 			return (p);
 		}
-		if(c == ',')
-			return &s[length];
 		length++;
 	}
 
