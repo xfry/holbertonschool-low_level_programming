@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdio.h>
+
 /**
  *_strchr - a function to search a character n in source s
  * @s: a source pointer
@@ -13,17 +15,13 @@ char *_strchr(char *s, char c)
 {
 	unsigned int length = 0;
 	char arr[] = {'0'};
-        char *p = arr;
+	char *p = arr;
 
-	while (s[length])
+	while(s[length])
 	{
-		if (s[length] == c)
-		{
+		if(s[length] == c)
 			arr[length] = c;
-			return (p);
-		}
-		length++;
+		return (p);
 	}
-
-	return (0);
+	return "";
 }
