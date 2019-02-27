@@ -25,5 +25,5 @@ char *_strchr(char *s, char c)
 		length++;
 	}
 
-	return (NULL);
+	return 0;
 }
