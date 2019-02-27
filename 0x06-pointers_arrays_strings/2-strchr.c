@@ -23,7 +23,8 @@ char *_strchr(char *s, char c)
 		{
 			return (&s[length]);
 		}
-		else if(c=='\0') {
+		else if (c == '\0')
+		{
 			arr[0] = c;
 			return (p);
 		}
