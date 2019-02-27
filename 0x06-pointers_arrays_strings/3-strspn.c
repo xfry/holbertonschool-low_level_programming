@@ -17,14 +17,12 @@ unsigned int _strspn(char *s, char *accept)
 	a_length -= 1;
 	while (s[substring] != ' ')
 	{
-		printf("s: %c\n", s[substring]);
 		if (s[substring] == accept[a_length])
 		{
 			counter++;
-			printf("ac: %c\n", accept[a_length]);
 		}
 		substring++;
 		a_length--;
 	}
-	return (counter + 2);
+	return (counter + 1);
 }
