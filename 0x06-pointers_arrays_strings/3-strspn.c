@@ -11,7 +11,11 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int counter = 0;
 	int length_a = 0;
 	int length_b = 0;
-	for(length_a = 0; s[length_a] != '\0'; length_a++)
+
+	if(s[length_a] == '\0' )
+		return (counter);
+
+	for(length_a = 0; s[length_a] != ' '; length_a++)
 	{
 		for(length_b = 0; accept[length_b] != '\0'; length_b++)
 		{
