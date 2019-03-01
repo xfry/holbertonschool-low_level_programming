@@ -8,17 +8,18 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int counter = 0, length = 0;
+	unsigned int counter = 0;
+	int length_a = 0;
+	int length_b = 0;
 
-	while(s[length] != ' ')
+	for(length_a = 0; s[length_a] != ' '; length_a++)
 	{
-		if(s[length] == accept[length])
+		for(length_b = 0; accept[length_b] != '\0'; length_b++)
 		{
-			counter++;
-			length++;
-		} else
-		{
-			break;
+			if(s[length_a] == accept[length_b])
+			{
+				counter++;
+			}
 		}
 	}
 
