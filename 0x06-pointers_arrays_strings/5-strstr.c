@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  *_strstr - a function to find the a string character into another
- * @haystack a pointer to literal string
- * @needle a pointer to literal string
+ * @haystack: a pointer to literal string
+ * @needle: a pointer to literal string
  *
  * description: a function to find the a string character into another
  * and return the substrig that match the character
