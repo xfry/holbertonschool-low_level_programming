@@ -20,7 +20,7 @@ size_t print_listint(const listint_t *h)
 	while (aux)
 	{
 		amount++;
-		printf("%d \n", aux->n);
+		printf("%d\n", aux->n);
 		if (aux->next)
 		{
 			aux = aux->next;
