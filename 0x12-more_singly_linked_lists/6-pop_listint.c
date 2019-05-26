@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include<stdlib.h>
 #include "lists.h"
 /**
@@ -11,15 +12,17 @@ int pop_listint(listint_t **head)
 {
 	listint_t *aux;
 	int n = 0;
+	(void)aux;
+	(void)n;
 
-	if (head)
-	{
-		aux = *head;
-		n = aux->n;
-		aux = aux->next;
-		free(*head);
-		*head = aux;
-	}
+	 if (*head)
+	 {
+		 aux = *head;
+		 n = aux->n;
+		 aux = aux->next;
+		 free(*head);
+		 *head = aux;
+	 }
 
 	return (n);
 }
