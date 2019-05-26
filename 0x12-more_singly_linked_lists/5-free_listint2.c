@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include<stdlib.h>
 #include "lists.h"
 
@@ -10,11 +11,12 @@
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *aux = *head;
+        listint_t *aux;
 
-	if(*head)
+	if(head)
 	{
-		while (aux->next)
+		aux = *head;
+		while(aux)
 		{
 			aux = aux->next;
 			free(*head);
