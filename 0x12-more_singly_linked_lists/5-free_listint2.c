@@ -1,16 +1,24 @@
 #include<stdlib.h>
 #include "lists.h"
 
+/**
+ * free_listint2 - a function to free every node at a linked list
+ * @head: is a double pointer to the head of the linked list.
+ *
+ * Description: A function to free memory used by a linked list
+ * Return: none
+ */
 void free_listint2(listint_t **head)
 {
 	listint_t *aux = *head;
-	while(aux->next)
+
+	while (aux->next)
 	{
 		aux = aux->next;
 		free(*head);
 		*head = aux;
 	}
-	if(*head)
+	if (*head)
 		free(*head);
 	*head = NULL;
 }
