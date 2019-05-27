@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include<stdlib.h>
 #include "lists.h"
 /**
@@ -35,9 +36,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *next_node;
 	unsigned int counter = 0;
 
-	if (head == NULL)
-		return (NULL);
-
 	new_node = malloc(sizeof(listint_t));
 	if (!new_node)
 		return (NULL);
@@ -49,6 +47,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		if (idx > list_len(*head))
 			return (NULL);
 		aux = *head;
+		if (idx == 0)
+		{
+			next_node = aux->next;
+			new_node->next = next_node;
+			*head = new_node;
+		}
 		while (aux->next)
 		{
 			counter++;
@@ -61,11 +65,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			}
 			aux = next_node;
 		}
-	}
-	else
-	{
-		*head = new_node;
-		return (*head);
 	}
 
 	return (NULL);
