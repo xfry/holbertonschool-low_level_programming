@@ -21,7 +21,12 @@ size_t list_len(const listint_t *h)
 }
 
 /**
+ * delete_nodeint_at_index - delete a node at index specified
+ * @head: a double pointer to the head of list
+ * @index: the index of node to delete
  *
+ * Description: a function to delete node at specified index
+ * Return: it can return -1 or 1 if it is successfull or fail
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -30,17 +35,17 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *prev_node;
 	unsigned int counter = 0;
 
-	if(*head)
+	if (*head)
 	{
-		if(index > list_len(*head))
+		if (index > list_len(*head))
 			return (-1);
 		temp = *head;
-		while(temp->next)
+		while (temp->next)
 		{
 			counter++;
 			next_node = temp->next;
 			prev_node = temp;
-			if(counter == index)
+			if (counter == index)
 			{
 				temp = next_node->next;
 				free(next_node);
