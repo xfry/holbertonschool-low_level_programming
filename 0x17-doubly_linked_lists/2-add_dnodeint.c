@@ -7,8 +7,8 @@
  * @n: a const param with the data for new node
  *
  * Description: A function to insert nodes at the prev node
-of a doubly linked list.
-* Return: the address of the new Element or NULL
+ * of a doubly linked list.
+ * Return: the address of the new Element or NULL
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
