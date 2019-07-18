@@ -3,15 +3,20 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *aux = head;
+	dlistint_t *aux = NULL;
 
-	while (aux)
+	while (head)
 	{
+		aux = head;
 		if (aux->next)
 		{
 			head = aux->next;
 			free(aux);
-			aux = aux->next;
+		}
+		else
+		{
+			free(aux);
+			head = NULL;
 		}
 	}
 }
