@@ -17,7 +17,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		if (aux)
 		{
 			aux = aux->next;
-			counter ++;
+			counter++;
 		}
 		else
 		{
